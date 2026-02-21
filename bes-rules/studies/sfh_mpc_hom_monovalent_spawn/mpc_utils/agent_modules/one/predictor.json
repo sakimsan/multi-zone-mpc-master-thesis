@@ -1,0 +1,111 @@
+{
+  "module_id": "predictor",
+  "parameters": [
+    {
+      "name": "sampling_time",
+      "value": 60
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Q_RadSol_measurement",
+      "value": 0
+    },
+    {
+      "name": "T_amb_measurement",
+      "value": 273.15
+    },
+    {
+      "name": "THeaCur_measurement",
+      "value": 293.15
+    },
+    {
+      "name": "T_preTemWin_measurement",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemWall_measurement",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemRoof_measurement",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemFloor_measurement",
+      "value": 286.15
+    },
+    {
+      "name": "schedule_human_measurement",
+      "value": 0
+    },
+    {
+      "name": "schedule_dev_measurement",
+      "value": 0
+    },
+    {
+      "name": "schedule_light_measurement",
+      "value": 0
+    },
+    {
+      "name": "P_el_pv_measurement",
+      "value": 0
+    },
+    {
+      "name": "SGReadySignal_measurement",
+      "value": 2
+    },
+        {
+      "name": "Q_RadSol_prediction",
+      "value": 0
+    },
+    {
+      "name": "T_amb_prediction",
+      "value": 273.15
+    },
+    {
+      "name": "THeaCur_prediction",
+      "value": 293.15
+    },
+    {
+      "name": "T_preTemWin_prediction",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemWall_prediction",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemRoof_prediction",
+      "value": 294.15
+    },
+    {
+      "name": "T_preTemFloor_prediction",
+      "value": 286.15
+    },
+    {
+      "name": "schedule_human_prediction",
+      "value": 0
+    },
+    {
+      "name": "schedule_dev_prediction",
+      "value": 0
+    },
+    {
+      "name": "schedule_light_prediction",
+      "value": 0
+    },
+    {
+      "name": "P_el_pv_prediction",
+      "value": 0
+    },
+    {
+      "name": "SGReadySignal_prediction",
+      "value": 2
+    }
+
+  ],
+  "shared_variable_fields": [
+    "outputs"
+  ]
+}

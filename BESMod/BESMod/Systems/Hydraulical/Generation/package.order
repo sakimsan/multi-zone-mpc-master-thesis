@@ -1,0 +1,13 @@
+DetailedSolarThermalWithHeatPump
+ElectricalHeater
+GasBoiler
+HeatPump
+HeatPumpAndElectricHeater
+HeatPumpAndGasBoilerParallel
+HeatPumpAndGasBoilerSerial
+NoGeneration
+SimpleSolarThermalWithHeatPump
+RecordsCollection
+Tests
+Types
+BaseClasses

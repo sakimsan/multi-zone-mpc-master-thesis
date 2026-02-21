@@ -1,0 +1,109 @@
+{
+  "module_id": "sim",
+  "type": "simulator",
+  "model": {
+    "type": "casadi",
+    "only_config_variables": true,
+    "dt": 60
+  },
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "shared_variable_fields": [
+    "outputs",
+    "states"
+  ],
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "input",
+    "output",
+    "local"
+  ],
+  "inputs": [
+    { "name": "TBufSet", "value": 323.15 },
+    { "name": "yEleHeaSet", "value": 0 },
+
+    { "name": "TSetOneZone_one", "value": 293.15 },
+    { "name": "yValSet_one", "value": 0 },
+        { "name": "TSetOneZone_two", "value": 293.15 },
+    { "name": "yValSet_two", "value": 0 },
+    {
+      "name": "Q_RadSol",
+      "value": 0.0,
+      "alias": "Q_RadSol_measurement"
+    },
+    {
+      "name": "T_amb",
+      "value": 283.15,
+      "alias": "T_amb_measurement"
+    },
+    {
+      "name": "THeaCur",
+      "value": 293.15,
+      "alias": "THeaCur_measurement"
+    },
+        {
+      "name": "T_preTemWin",
+      "value": 293.15,
+      "alias": "T_preTemWin_measurement"
+    },
+    {
+      "name": "T_preTemWall",
+      "value": 293.15,
+      "alias": "T_preTemWall_measurement"
+    },
+    {
+      "name": "T_preTemRoof",
+      "value": 293.15,
+      "alias": "T_preTemRoof_measurement"
+    },
+    {
+      "name": "T_preTemFloor",
+      "value": 286.15,
+      "alias": "T_preTemFloor_measurement"
+    },
+    {
+      "name": "schedule_human",
+      "value": 0.0,
+      "alias": "schedule_human_measurement"
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0.0,
+      "alias": "schedule_dev_measurement"
+    },
+    {
+      "name": "schedule_light",
+      "value": 0.0,
+      "alias": "schedule_light_measurement"
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0.0,
+      "alias": "P_el_pv_measurement"
+    },
+    {
+      "name": "SGReadySignal",
+      "value": 2,
+      "alias": "SGReadySignal_measurement"
+    }
+  ],
+  "outputs": [],
+  "states": [
+    { "name": "T_TES_1" },
+    { "name": "T_TES_2" },
+    { "name": "T_TES_3" },
+    { "name": "T_TES_4" },
+
+    { "name": "T_Air_one" },
+    { "name": "T_Roof_one" },
+    { "name": "T_Floor_one" },
+    { "name": "T_ExtWall_one" },
+    { "name": "T_IntWall_one" },
+
+        { "name": "T_Air_two" },
+    { "name": "T_Roof_two" },
+    { "name": "T_Floor_two" },
+    { "name": "T_ExtWall_two" },
+    { "name": "T_IntWall_two" }
+  ]
+}

@@ -1,0 +1,8 @@
+PartialVelocityBased
+ReverseCycleDefrostHeatPump
+ZhuFrostingZone
+IceMassIntegrator
+IceMassDeforst
+EstimateFrostTemperature
+FrostDensityKorn
+FrostDensityKornTableBased

@@ -1,0 +1,9 @@
+openModel("D:\fwu-ssr\BESMod\installed_dependencies\IBPSA\IBPSA\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\BESMod\installed_dependencies\AixLib\AixLib\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\BESMod\installed_dependencies\Buildings\Buildings\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\BESMod\installed_dependencies\BuildingSystems\BuildingSystems\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\BESMod\BESMod\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\besgriconop\Modelica\BESGriConOp\package.mo", changeDirectory=false);
+openModel("D:\fwu-ssr\bes-rules\modelica\BESRules\package.mo", changeDirectory=false);
+// Change working directory
+cd("D:\fwu-ssr\res");

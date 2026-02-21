@@ -1,0 +1,192 @@
+{
+  "module_id": "sim",
+  "type": "simulator",
+  "model": {
+    "type": "casadi",
+    "only_config_variables": true,
+    "dt": 60
+  },
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "shared_variable_fields": [
+    "outputs",
+    "states"
+  ],
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "input",
+    "output",
+    "local"
+  ],
+  "inputs": [
+    { "name": "TBufSet", "value": 323.15 },
+    { "name": "yEleHeaSet", "value": 0 },
+
+    { "name": "TSetOneZone_livingroom", "value": 293.15 },
+    { "name": "yValSet_livingroom", "value": 0 },
+
+    { "name": "TSetOneZone_kitchen", "value": 293.15 },
+    { "name": "yValSet_kitchen", "value": 0 },
+
+    { "name": "TSetOneZone_hobby", "value": 293.15 },
+    { "name": "yValSet_hobby", "value": 0 },
+
+    { "name": "TSetOneZone_wcstorage", "value": 293.15 },
+    { "name": "yValSet_wcstorage", "value": 0 },
+
+    { "name": "TSetOneZone_corridor", "value": 293.15 },
+    { "name": "yValSet_corridor", "value": 0 },
+
+    { "name": "TSetOneZone_bedroom", "value": 293.15 },
+    { "name": "yValSet_bedroom", "value": 0 },
+
+    { "name": "TSetOneZone_children", "value": 293.15 },
+    { "name": "yValSet_children", "value": 0 },
+
+    { "name": "TSetOneZone_corridor2", "value": 293.15 },
+    { "name": "yValSet_corridor2", "value": 0 },
+
+    { "name": "TSetOneZone_bath", "value": 293.15 },
+    { "name": "yValSet_bath", "value": 0 },
+
+    { "name": "TSetOneZone_children2", "value": 293.15 },
+    { "name": "yValSet_children2", "value": 0 },
+
+    { "name": "TSetOneZone_attic", "value": 293.15 },
+    { "name": "yValSet_attic", "value": 0 },
+
+    {
+      "name": "Q_RadSol",
+      "value": 0.0,
+      "alias": "Q_RadSol_measurement"
+    },
+    {
+      "name": "T_amb",
+      "value": 283.15,
+      "alias": "T_amb_measurement"
+    },
+    {
+      "name": "THeaCur",
+      "value": 293.15,
+      "alias": "THeaCur_measurement"
+    },
+        {
+      "name": "T_preTemWin",
+      "value": 293.15,
+      "alias": "T_preTemWin_measurement"
+    },
+    {
+      "name": "T_preTemWall",
+      "value": 293.15,
+      "alias": "T_preTemWall_measurement"
+    },
+    {
+      "name": "T_preTemRoof",
+      "value": 293.15,
+      "alias": "T_preTemRoof_measurement"
+    },
+    {
+      "name": "T_preTemFloor",
+      "value": 286.15,
+      "alias": "T_preTemFloor_measurement"
+    },
+    {
+      "name": "schedule_human",
+      "value": 0.0,
+      "alias": "schedule_human_measurement"
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0.0,
+      "alias": "schedule_dev_measurement"
+    },
+    {
+      "name": "schedule_light",
+      "value": 0.0,
+      "alias": "schedule_light_measurement"
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0.0,
+      "alias": "P_el_pv_measurement"
+    },
+    {
+      "name": "SGReadySignal",
+      "value": 2,
+      "alias": "SGReadySignal_measurement"
+    }
+  ],
+  "outputs": [],
+  "states": [
+    { "name": "T_TES_1" },
+    { "name": "T_TES_2" },
+    { "name": "T_TES_3" },
+    { "name": "T_TES_4" },
+
+    { "name": "T_Air_livingroom" },
+    { "name": "T_Roof_livingroom" },
+    { "name": "T_Floor_livingroom" },
+    { "name": "T_ExtWall_livingroom" },
+    { "name": "T_IntWall_livingroom" },
+
+    { "name": "T_Air_kitchen" },
+    { "name": "T_Roof_kitchen" },
+    { "name": "T_Floor_kitchen" },
+    { "name": "T_ExtWall_kitchen" },
+    { "name": "T_IntWall_kitchen" },
+
+    { "name": "T_Air_hobby" },
+    { "name": "T_Roof_hobby" },
+    { "name": "T_Floor_hobby" },
+    { "name": "T_ExtWall_hobby" },
+    { "name": "T_IntWall_hobby" },
+
+    { "name": "T_Air_wcstorage" },
+    { "name": "T_Roof_wcstorage" },
+    { "name": "T_Floor_wcstorage" },
+    { "name": "T_ExtWall_wcstorage" },
+    { "name": "T_IntWall_wcstorage" },
+
+    { "name": "T_Air_corridor" },
+    { "name": "T_Roof_corridor" },
+    { "name": "T_Floor_corridor" },
+    { "name": "T_ExtWall_corridor" },
+    { "name": "T_IntWall_corridor" },
+
+    { "name": "T_Air_bedroom" },
+    { "name": "T_Roof_bedroom" },
+    { "name": "T_Floor_bedroom" },
+    { "name": "T_ExtWall_bedroom" },
+    { "name": "T_IntWall_bedroom" },
+
+    { "name": "T_Air_children" },
+    { "name": "T_Roof_children" },
+    { "name": "T_Floor_children" },
+    { "name": "T_ExtWall_children" },
+    { "name": "T_IntWall_children" },
+
+    { "name": "T_Air_corridor2" },
+    { "name": "T_Roof_corridor2" },
+    { "name": "T_Floor_corridor2" },
+    { "name": "T_ExtWall_corridor2" },
+    { "name": "T_IntWall_corridor2" },
+
+    { "name": "T_Air_bath" },
+    { "name": "T_Roof_bath" },
+    { "name": "T_Floor_bath" },
+    { "name": "T_ExtWall_bath" },
+    { "name": "T_IntWall_bath" },
+
+    { "name": "T_Air_children2" },
+    { "name": "T_Roof_children2" },
+    { "name": "T_Floor_children2" },
+    { "name": "T_ExtWall_children2" },
+    { "name": "T_IntWall_children2" },
+
+    { "name": "T_Air_attic" },
+    { "name": "T_Roof_attic" },
+    { "name": "T_Floor_attic" },
+    { "name": "T_ExtWall_attic" },
+    { "name": "T_IntWall_attic" }
+  ]
+}

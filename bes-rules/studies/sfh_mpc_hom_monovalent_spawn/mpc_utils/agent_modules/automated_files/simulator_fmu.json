@@ -1,0 +1,649 @@
+{
+  "module_id": "sim",
+  "type": "simulator",
+  "model": {
+    "type": "fmu",
+    "only_config_variables": true
+  },
+  "hom": true,
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "shared_variable_fields": [
+    "outputs",
+    "states"
+  ],
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "input",
+    "output",
+    "local"
+  ],
+  "inputs": [
+    {
+      "name": "TBufSet",
+      "value": 323.15,
+      "lb": 293.15,
+      "ub": 343.15
+    },
+    {
+      "name": "yValSet[1]",
+      "value": 0.0,
+      "alias": "yValSet_livingroom",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[2]",
+      "value": 0.0,
+      "alias": "yValSet_hobby",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[3]",
+      "value": 0.0,
+      "alias": "yValSet_corridor",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[4]",
+      "value": 0.0,
+      "alias": "yValSet_wcstorage",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[5]",
+      "value": 0.0,
+      "alias": "yValSet_kitchen",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[6]",
+      "value": 0.0,
+      "alias": "yValSet_bedroom",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[7]",
+      "value": 0.0,
+      "alias": "yValSet_children",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[8]",
+      "value": 0.0,
+      "alias": "yValSet_corridor2",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[9]",
+      "value": 0.0,
+      "alias": "yValSet_bath",
+      "lb": 0.0,
+      "ub": 1.0
+    },
+    {
+      "name": "yValSet[10]",
+      "value": 0.0,
+      "alias": "yValSet_children2",
+      "lb": 0.0,
+      "ub": 1.0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "outputs.electrical.dis.PEleLoa.value",
+      "alias": "P_el_feed_from_grid"
+    },
+    {
+      "name": "outputs.electrical.dis.PEleGen.value",
+      "alias": "P_el_feed_into_grid"
+    }
+  ],
+  "states": [
+    {
+      "name": "building.groundFloor.TZoneMea[1]",
+      "alias": "T_Air_livingroom"
+    },
+    {
+      "name": "building.groundFloor.TZoneMea[2]",
+      "alias": "T_Air_hobby"
+    },
+    {
+      "name": "building.groundFloor.TZoneMea[3]",
+      "alias": "T_Air_corridor"
+    },
+    {
+      "name": "building.groundFloor.TZoneMea[4]",
+      "alias": "T_Air_wcstorage"
+    },
+    {
+      "name": "building.groundFloor.TZoneMea[5]",
+      "alias": "T_Air_kitchen"
+    },
+    {
+      "name": "building.upperFloor.TZoneMea[1]",
+      "alias": "T_Air_bedroom"
+    },
+    {
+      "name": "building.upperFloor.TZoneMea[2]",
+      "alias": "T_Air_children"
+    },
+    {
+      "name": "building.upperFloor.TZoneMea[3]",
+      "alias": "T_Air_corridor2"
+    },
+    {
+      "name": "building.upperFloor.TZoneMea[4]",
+      "alias": "T_Air_bath"
+    },
+    {
+      "name": "building.upperFloor.TZoneMea[5]",
+      "alias": "T_Air_children2"
+    },
+    {
+      "name": "building.attic.TZoneMea",
+      "alias": "T_Air_attic"
+    },
+    {
+      "name": "hydraulic.distribution.stoBuf.layer[1].T",
+      "alias": "T_TES_1"
+    },
+    {
+      "name": "hydraulic.distribution.stoBuf.layer[2].T",
+      "alias": "T_TES_2"
+    },
+    {
+      "name": "hydraulic.distribution.stoBuf.layer[3].T",
+      "alias": "T_TES_3"
+    },
+    {
+      "name": "hydraulic.distribution.stoBuf.layer[4].T",
+      "alias": "T_TES_4"
+    },
+    {
+      "name": "building.ZoneWindowsTotalHeatRateNonSolar.y[1]",
+      "alias": "ZoneWindowsTotalHeatRate_livingroom"
+    },
+    {
+      "name": "building.ZoneInsideFaceSolarRadiationHeatGainRate1.y",
+      "alias": "Q_RadSol_livingroom"
+    },
+    {
+      "name": "discomfortKh[1].y"
+    },
+    {
+      "name": "discomfortKh[2].y"
+    },
+    {
+      "name": "discomfortKh[3].y"
+    },
+    {
+      "name": "discomfortKh[4].y"
+    },
+    {
+      "name": "discomfortKh[5].y"
+    },
+    {
+      "name": "discomfortKh[6].y"
+    },
+    {
+      "name": "discomfortKh[7].y"
+    },
+    {
+      "name": "discomfortKh[8].y"
+    },
+    {
+      "name": "discomfortKh[9].y"
+    },
+    {
+      "name": "discomfortKh[10].y"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[6]",
+      "alias": "T_Floor_Decke_livingroom"
+    },
+    {
+      "name": "building.TempGroundFloorNode7.y[3]",
+      "alias": "T_Floor_GroundFloor_2_livingroom"
+    },
+    {
+      "name": "building.TempGroundFloorNode14.y[3]",
+      "alias": "T_Floor_GroundFloor_1_livingroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[13]",
+      "alias": "T_IntWall_InnerWall_livingroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[14]",
+      "alias": "T_IntWall_InnerWall2_livingroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[15]",
+      "alias": "T_IntWall_InnerWall3_livingroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[16]",
+      "alias": "T_IntWall_InnerWall4_livingroom"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[13]",
+      "alias": "T_ExtWall_OuterWall_2_livingroom"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[14]",
+      "alias": "T_ExtWall_OuterWall2_2_livingroom"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[13]",
+      "alias": "T_ExtWall_OuterWall_1_livingroom"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[14]",
+      "alias": "T_ExtWall_OuterWall2_1_livingroom"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[5]",
+      "alias": "T_Floor_Decke_hobby"
+    },
+    {
+      "name": "building.TempGroundFloorNode7.y[2]",
+      "alias": "T_Floor_GroundFloor_2_hobby"
+    },
+    {
+      "name": "building.TempGroundFloorNode14.y[2]",
+      "alias": "T_Floor_GroundFloor_1_hobby"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[11]",
+      "alias": "T_IntWall_InnerWall_hobby"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[12]",
+      "alias": "T_IntWall_InnerWall2_hobby"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[11]",
+      "alias": "T_ExtWall_OuterWall_2_hobby"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[12]",
+      "alias": "T_ExtWall_OuterWall2_2_hobby"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[11]",
+      "alias": "T_ExtWall_OuterWall_1_hobby"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[12]",
+      "alias": "T_ExtWall_OuterWall2_1_hobby"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[7]",
+      "alias": "T_Floor_Decke_corridor"
+    },
+    {
+      "name": "building.TempGroundFloorNode7.y[4]",
+      "alias": "T_Floor_GroundFloor_2_corridor"
+    },
+    {
+      "name": "building.TempGroundFloorNode14.y[4]",
+      "alias": "T_Floor_GroundFloor_1_corridor"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[17]",
+      "alias": "T_IntWall_InnerWall_corridor"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[18]",
+      "alias": "T_IntWall_InnerWall2_corridor"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[19]",
+      "alias": "T_IntWall_InnerWall3_corridor"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[20]",
+      "alias": "T_IntWall_InnerWall4_corridor"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[21]",
+      "alias": "T_IntWall_InnerWall5_corridor"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[15]",
+      "alias": "T_ExtWall_OuterWall_2_corridor"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[15]",
+      "alias": "T_ExtWall_OuterWall_1_corridor"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[1]",
+      "alias": "T_Floor_Decke_wcstorage"
+    },
+    {
+      "name": "building.TempGroundFloorNode7.y[1]",
+      "alias": "T_Floor_GroundFloor_2_wcstorage"
+    },
+    {
+      "name": "building.TempGroundFloorNode14.y[1]",
+      "alias": "T_Floor_GroundFloor_1_wcstorage"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[1]",
+      "alias": "T_IntWall_InnerWall_wcstorage"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[2]",
+      "alias": "T_IntWall_InnerWall2_wcstorage"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[1]",
+      "alias": "T_ExtWall_OuterWall_2_wcstorage"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[2]",
+      "alias": "T_ExtWall_OuterWall2_2_wcstorage"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[1]",
+      "alias": "T_ExtWall_OuterWall_1_wcstorage"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[2]",
+      "alias": "T_ExtWall_OuterWall2_1_wcstorage"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[9]",
+      "alias": "T_Floor_Decke_kitchen"
+    },
+    {
+      "name": "building.TempGroundFloorNode7.y[5]",
+      "alias": "T_Floor_GroundFloor_2_kitchen"
+    },
+    {
+      "name": "building.TempGroundFloorNode14.y[5]",
+      "alias": "T_Floor_GroundFloor_1_kitchen"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[27]",
+      "alias": "T_IntWall_InnerWall_kitchen"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[28]",
+      "alias": "T_IntWall_InnerWall2_kitchen"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[29]",
+      "alias": "T_IntWall_InnerWall3_kitchen"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[30]",
+      "alias": "T_IntWall_InnerWall4_kitchen"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[17]",
+      "alias": "T_ExtWall_OuterWall_2_kitchen"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[18]",
+      "alias": "T_ExtWall_OuterWall2_2_kitchen"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[17]",
+      "alias": "T_ExtWall_OuterWall_1_kitchen"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[18]",
+      "alias": "T_ExtWall_OuterWall2_1_kitchen"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[4]",
+      "alias": "T_Floor_Decke_bedroom"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[8]",
+      "alias": "T_Floor_InnerFloor_bedroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[7]",
+      "alias": "T_IntWall_InnerWall_bedroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[8]",
+      "alias": "T_IntWall_InnerWall2_bedroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[9]",
+      "alias": "T_IntWall_InnerWall3_bedroom"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[10]",
+      "alias": "T_IntWall_InnerWall4_bedroom"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[9]",
+      "alias": "T_ExtWall_OuterWall_2_bedroom"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[10]",
+      "alias": "T_ExtWall_OuterWall2_2_bedroom"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[9]",
+      "alias": "T_ExtWall_OuterWall_1_bedroom"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[10]",
+      "alias": "T_ExtWall_OuterWall2_1_bedroom"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[2]",
+      "alias": "T_Floor_Decke_children"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[1]",
+      "alias": "T_Floor_InnerFloor_children"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[3]",
+      "alias": "T_IntWall_InnerWall_children"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[4]",
+      "alias": "T_IntWall_InnerWall2_children"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[3]",
+      "alias": "T_ExtWall_OuterWall_2_children"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[4]",
+      "alias": "T_ExtWall_OuterWall2_2_children"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[3]",
+      "alias": "T_ExtWall_OuterWall_1_children"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[4]",
+      "alias": "T_ExtWall_OuterWall2_1_children"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[8]",
+      "alias": "T_Floor_Decke_corridor2"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[9]",
+      "alias": "T_Floor_InnerFloor_corridor2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[22]",
+      "alias": "T_IntWall_InnerWall_corridor2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[23]",
+      "alias": "T_IntWall_InnerWall2_corridor2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[24]",
+      "alias": "T_IntWall_InnerWall3_corridor2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[25]",
+      "alias": "T_IntWall_InnerWall4_corridor2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[26]",
+      "alias": "T_IntWall_InnerWall5_corridor2"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[16]",
+      "alias": "T_ExtWall_OuterWall_2_corridor2"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[16]",
+      "alias": "T_ExtWall_OuterWall_1_corridor2"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[3]",
+      "alias": "T_Floor_Decke_bath"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[2]",
+      "alias": "T_Floor_InnerFloor_bath"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[5]",
+      "alias": "T_IntWall_InnerWall_bath"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[6]",
+      "alias": "T_IntWall_InnerWall2_bath"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[5]",
+      "alias": "T_ExtWall_OuterWall_2_bath"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[6]",
+      "alias": "T_ExtWall_OuterWall2_2_bath"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[5]",
+      "alias": "T_ExtWall_OuterWall_1_bath"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[6]",
+      "alias": "T_ExtWall_OuterWall2_1_bath"
+    },
+    {
+      "name": "building.TempDeckeNode6.y[10]",
+      "alias": "T_Floor_Decke_children2"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[10]",
+      "alias": "T_Floor_InnerFloor_children2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[31]",
+      "alias": "T_IntWall_InnerWall_children2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[32]",
+      "alias": "T_IntWall_InnerWall2_children2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[33]",
+      "alias": "T_IntWall_InnerWall3_children2"
+    },
+    {
+      "name": "building.TempIntWallNode10.y[34]",
+      "alias": "T_IntWall_InnerWall4_children2"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[19]",
+      "alias": "T_ExtWall_OuterWall_2_children2"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[20]",
+      "alias": "T_ExtWall_OuterWall2_2_children2"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[19]",
+      "alias": "T_ExtWall_OuterWall_1_children2"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[20]",
+      "alias": "T_ExtWall_OuterWall2_1_children2"
+    },
+    {
+      "name": "building.TempRoofNode3.y[1]",
+      "alias": "T_Roof_Dach_2_attic"
+    },
+    {
+      "name": "building.TempRoofNode3.y[2]",
+      "alias": "T_Roof_Dach2_2_attic"
+    },
+    {
+      "name": "building.TempRoofNode3.y[3]",
+      "alias": "T_Roof_Dach3_2_attic"
+    },
+    {
+      "name": "building.TempRoofNode6.y[1]",
+      "alias": "T_Roof_Dach_1_attic"
+    },
+    {
+      "name": "building.TempRoofNode6.y[2]",
+      "alias": "T_Roof_Dach2_1_attic"
+    },
+    {
+      "name": "building.TempRoofNode6.y[3]",
+      "alias": "T_Roof_Dach3_1_attic"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[3]",
+      "alias": "T_Floor_InnerFloor_attic"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[4]",
+      "alias": "T_Floor_InnerFloor2_attic"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[5]",
+      "alias": "T_Floor_InnerFloor3_attic"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[6]",
+      "alias": "T_Floor_InnerFloor4_attic"
+    },
+    {
+      "name": "building.TempInnerFloorNode6.y[7]",
+      "alias": "T_Floor_InnerFloor5_attic"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[7]",
+      "alias": "T_ExtWall_OuterWall_2_attic"
+    },
+    {
+      "name": "building.TempExtWallNode15.y[8]",
+      "alias": "T_ExtWall_OuterWall2_2_attic"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[7]",
+      "alias": "T_ExtWall_OuterWall_1_attic"
+    },
+    {
+      "name": "building.TempExtWallNode30.y[8]",
+      "alias": "T_ExtWall_OuterWall2_1_attic"
+    }
+  ]
+}

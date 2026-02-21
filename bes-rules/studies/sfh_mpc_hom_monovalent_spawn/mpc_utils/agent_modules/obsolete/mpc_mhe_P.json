@@ -1,0 +1,168 @@
+{
+  "module_id": "mhe",
+  "type": "agentlib_mpc.mhe_cisbat",
+  "optimization_backend": {
+    "type": "casadi_mhe",
+    "model": {
+      "type": {
+        "file": "C:/Users/tsp/Programme/bes-rules/studies_tsp/sfh_mpc_rom_bes_simple/mpc_utils/model_rom_P.py",
+        "class_name": "MPC"
+      }
+    },
+    "build_batch_bat": "mpc_utils/solver_lib/compile_nlp.bat",
+    "do_jit": false,
+    "overwrite_result_file": true,
+    "discretization_options": {
+      "collocation_order": 2,
+      "collocation_method": "legendre"
+    },
+    "solver": {
+      "name": "ipopt",
+      "options": {
+        "ipopt": {
+          "max_iter": 10000,
+          "max_cpu_time": 60,
+          "tol": 0.0001,
+          "acceptable_iter": 20,
+          "acceptable_tol": 0.001
+        }
+      }
+    },
+    "results_file": "C:/res/SFH_MPCRom_BESsimple/mpc_design_CISBAT2025/DesignOptimizationResults/TRY2015_523845130645_Jahr_NoRetrofit1983_SingleDwelling_NoDHW_0K-Per-IntGai_/mhe.csv"
+  },
+  "horizon": 16,
+  "time_step": 900,
+  "state_weights": {
+    "T_TES_1": 0.01, "T_TES_2": 0.01, "T_TES_3": 0.01, "T_TES_4": 0.01,
+    "T_Air": 0.01, "T_Roof": 0, "T_Floor": 0, "T_ExtWall": 0, "T_IntWall": 0,
+    "yValState": 1
+  },
+  "states": [
+    {
+      "name": "yValState",
+      "value": 1
+    },
+    {
+      "name": "T_TES_1",
+      "value": 328.15
+    },
+    {
+      "name": "T_TES_2",
+      "value": 333.15
+    },
+    {
+      "name": "T_TES_3",
+      "value": 338.15
+    },
+    {
+      "name": "T_TES_4",
+      "value": 343.15
+    },
+    {
+      "name": "T_Air",
+      "value": 293.15
+    },
+    {
+      "name": "T_Roof",
+      "value": 293.15,
+      "lb": 283.15,
+      "ub": 295.15
+    },
+    {
+      "name": "T_Floor",
+      "value": 293.15,
+      "lb": 283.15,
+      "ub": 295.15
+    },
+    {
+      "name": "T_ExtWall",
+      "value": 293.15,
+      "lb": 283.15,
+      "ub": 295.15
+    },
+    {
+      "name": "T_IntWall",
+      "value": 293.15,
+      "lb": 288.15,
+      "ub": 303.15
+    }
+  ],
+  "estimated_inputs": [],
+  "estimated_parameters": [],
+  "known_inputs": [
+      {
+      "name": "TBufSet",
+      "value": 323.15
+    },
+    {
+      "name": "TSetOneZone",
+      "value": 293.15
+    },
+    {
+      "name": "yEleHeaSet",
+      "value": 0.5
+    },
+    {
+      "name": "Q_RadSol",
+      "value": 0
+    },
+    {
+      "name": "T_amb",
+      "value": 283.15
+    },
+    {
+      "name": "THeaCur",
+      "value": 293.15
+    },
+        {
+      "name": "T_preTemWin",
+      "value": 293.15
+    },
+    {
+      "name": "T_preTemWall",
+      "value": 293.15
+    },
+    {
+      "name": "T_preTemRoof",
+      "value": 293.15
+    },
+    {
+      "name": "T_preTemFloor",
+      "value": 286.15
+    },
+    {
+      "name": "schedule_human",
+      "value": 0
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0
+    },
+    {
+      "name": "schedule_light",
+      "value": 0
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0
+    }
+  ],
+  "known_parameters": [
+    {
+      "name": "T_Air_ub",
+      "value": 296.06
+    },
+    {
+      "name": "T_Air_lb",
+      "value": 292.06
+    },
+    {
+      "name": "c_comf_upper",
+      "value": 1000
+    },
+    {
+      "name": "c_comf_lower",
+      "value": 1000
+    }
+  ]
+}

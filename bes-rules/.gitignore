@@ -1,0 +1,10 @@
+.idea
+*.pyc
+*.mos
+*.env*
+*.egg-info*
+pc_specific_settings.json
+*.bak-mo
+/spawn-MonovalentVitoCal_HOM_MPC_2h.building/
+/studies_ssr/sfh_mpc_hom_monovalent_spawn/variable_logs/
+/studies_ssr/sfh_mpc_hom_monovalent_spawn/spawn-MonovalentVitoCal_HOM_MPC_2h.building/

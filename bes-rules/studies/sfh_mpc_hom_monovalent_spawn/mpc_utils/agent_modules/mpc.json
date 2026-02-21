@@ -1,0 +1,155 @@
+{
+  "module_id": "mpc",
+  "type": "agentlib_mpc.mpc",
+  "optimization_backend": {
+    "type": "casadi",
+    "build_batch_bat": "mpc_utils/solver_lib/compile_nlp.bat",
+    "do_jit": false,
+    "overwrite_result_file": true,
+    "discretization_options": {
+      "collocation_order": 2,
+      "collocation_method": "legendre"
+    },
+    "solver": {
+      "name": "ipopt",
+      "options": {
+        "ipopt": {
+          "max_iter": 10000,
+          "max_cpu_time": 120,
+          "tol": 0.0001,
+          "acceptable_iter": 20,
+          "acceptable_tol": 0.001
+        }
+      }
+    }
+  },
+  "parameters": [
+    { "name": "T_Air_ub", "value": 296.06 },
+    { "name": "T_Air_lb", "value": 293.06 },
+    { "name": "c_comf_upper", "value": 10000 },
+    { "name": "c_comf_lower", "value": 100 }
+  ],
+  "controls": [
+    { "name": "TBufSet", "value": 323.15, "lb": 293.15, "ub": 343.15 },
+    { "name": "yEleHeaSet", "value": 0.0, "lb": 0, "ub": 1},
+
+    { "name": "TSetOneZone_livingroom", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_livingroom", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_kitchen", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_kitchen", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_hobby", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_hobby", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_wcstorage", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_wcstorage", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_corridor", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_corridor", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_bedroom", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_bedroom", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_children", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_children", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_corridor2", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_corridor2", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_bath", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_bath", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_children2", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_children2", "value": 0.0, "lb": 0, "ub": 1 },
+
+    { "name": "TSetOneZone_attic", "value": 293.15, "lb": 292.06, "ub": 296.06 },
+    { "name": "yValSet_attic", "value": 0.0, "lb": 0, "ub": 1 }
+  ],
+  "states": [
+    { "name": "T_TES_1", "value": 293.15 },
+    { "name": "T_TES_2", "value": 293.15 },
+    { "name": "T_TES_3", "value": 293.15 },
+    { "name": "T_TES_4", "value": 293.15 },
+
+    { "name": "T_Air_livingroom", "value": 293.15 },
+    { "name": "T_Roof_livingroom", "value": 293.15 },
+    { "name": "T_Floor_livingroom", "value": 293.15 },
+    { "name": "T_ExtWall_livingroom", "value": 293.15 },
+    { "name": "T_IntWall_livingroom", "value": 293.15 },
+
+    { "name": "T_Air_kitchen", "value": 293.15 },
+    { "name": "T_Roof_kitchen", "value": 293.15 },
+    { "name": "T_Floor_kitchen", "value": 293.15 },
+    { "name": "T_ExtWall_kitchen", "value": 293.15 },
+    { "name": "T_IntWall_kitchen", "value": 293.15 },
+
+    { "name": "T_Air_hobby", "value": 293.15 },
+    { "name": "T_Roof_hobby", "value": 293.15 },
+    { "name": "T_Floor_hobby", "value": 293.15 },
+    { "name": "T_ExtWall_hobby", "value": 293.15 },
+    { "name": "T_IntWall_hobby", "value": 293.15 },
+
+    { "name": "T_Air_wcstorage", "value": 293.15 },
+    { "name": "T_Roof_wcstorage", "value": 293.15 },
+    { "name": "T_Floor_wcstorage", "value": 293.15 },
+    { "name": "T_ExtWall_wcstorage", "value": 293.15 },
+    { "name": "T_IntWall_wcstorage", "value": 293.15 },
+
+    { "name": "T_Air_corridor", "value": 293.15 },
+    { "name": "T_Roof_corridor", "value": 293.15 },
+    { "name": "T_Floor_corridor", "value": 293.15 },
+    { "name": "T_ExtWall_corridor", "value": 293.15 },
+    { "name": "T_IntWall_corridor", "value": 293.15 },
+
+    { "name": "T_Air_bedroom", "value": 293.15 },
+    { "name": "T_Roof_bedroom", "value": 293.15 },
+    { "name": "T_Floor_bedroom", "value": 293.15 },
+    { "name": "T_ExtWall_bedroom", "value": 293.15 },
+    { "name": "T_IntWall_bedroom", "value": 293.15 },
+
+    { "name": "T_Air_children", "value": 293.15 },
+    { "name": "T_Roof_children", "value": 293.15 },
+    { "name": "T_Floor_children", "value": 293.15 },
+    { "name": "T_ExtWall_children", "value": 293.15 },
+    { "name": "T_IntWall_children", "value": 293.15 },
+
+    { "name": "T_Air_corridor2", "value": 293.15 },
+    { "name": "T_Roof_corridor2", "value": 293.15 },
+    { "name": "T_Floor_corridor2", "value": 293.15 },
+    { "name": "T_ExtWall_corridor2", "value": 293.15 },
+    { "name": "T_IntWall_corridor2", "value": 293.15 },
+
+    { "name": "T_Air_bath", "value": 293.15 },
+    { "name": "T_Roof_bath", "value": 293.15 },
+    { "name": "T_Floor_bath", "value": 293.15 },
+    { "name": "T_ExtWall_bath", "value": 293.15 },
+    { "name": "T_IntWall_bath", "value": 293.15 },
+
+    { "name": "T_Air_children2", "value": 293.15 },
+    { "name": "T_Roof_children2", "value": 293.15 },
+    { "name": "T_Floor_children2", "value": 293.15 },
+    { "name": "T_ExtWall_children2", "value": 293.15 },
+    { "name": "T_IntWall_children2", "value": 293.15 },
+
+    { "name": "T_Air_attic", "value": 293.15 },
+    { "name": "T_Roof_attic", "value": 293.15 },
+    { "name": "T_Floor_attic", "value": 293.15 },
+    { "name": "T_ExtWall_attic", "value": 293.15 },
+    { "name": "T_IntWall_attic", "value": 293.15 }
+  ],
+  "inputs": [
+    { "name": "Q_RadSol", "value": 0.0, "alias": "Q_RadSol_prediction" },
+    { "name": "T_amb", "value": 283.15, "alias": "T_amb_prediction" },
+    { "name": "THeaCur", "value": 293.15, "alias": "THeaCur_prediction" },
+    { "name": "T_preTemWin", "value": 293.15, "alias": "T_preTemWin_prediction" },
+    { "name": "T_preTemWall", "value": 293.15, "alias": "T_preTemWall_prediction" },
+    { "name": "T_preTemRoof", "value": 293.15, "alias": "T_preTemRoof_prediction" },
+    { "name": "T_preTemFloor", "value": 286.15, "alias": "T_preTemFloor_prediction" },
+    { "name": "schedule_human", "value": 0.0, "alias": "schedule_human_prediction" },
+    { "name": "schedule_dev", "value": 0.0, "alias": "schedule_dev_prediction" },
+    { "name": "schedule_light", "value": 0.0, "alias": "schedule_light_prediction" },
+    { "name": "P_el_pv", "value": 0.0, "alias": "P_el_pv_prediction" },
+    { "name": "SGReadySignal", "value": 2, "alias": "SGReadySignal_prediction" }
+  ]
+}

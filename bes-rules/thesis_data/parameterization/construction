@@ -1,0 +1,48 @@
+  Construction,
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Name
+    concrete_0.16,           !- Outside Layer
+    XPS_2_core_layer_0.04,   !- Layer 2
+    cement_floating_screed_1_middle_0.04,  !- Layer 3
+    EPS_perimeter_insulation_top_layer_0.08,  !- Layer 4
+    oak_old_0.03;            !- Layer 5
+
+  Construction,
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Name
+    concrete_CEM_II_BS325R_wz05_0.15,  !- Outside Layer
+    EPS_040_15_0.03,         !- Layer 2
+    cement_floating_screed_2_bottom_0.04;  !- Layer 3
+
+  Construction,
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Name
+    insulating_plaster_0.02, !- Outside Layer
+    EPS_perimeter_insulation_top_layer_0.12,  !- Layer 2
+    polysterene_lightweight_concrete_900_0.34;  !- Layer 3
+
+  Construction,
+    Window_WM_glas_generic_0.45541538461538456,  !- Name
+    WM_glas_generic_0.45541538461538456;  !- Outside Layer
+
+  Construction,
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Name
+    lime_plaster_0.01,       !- Outside Layer
+    vertical_core_brick_700_0.15,  !- Layer 2
+    lime_plaster_0.01;       !- Layer 3
+
+  Construction,
+    BPS-InnerDoor_3_0.01_0.06_0.01,  !- Name
+    oak_longitudinal_0.01,   !- Outside Layer
+    wood_wool_board_magnesia_460_0.06,  !- Layer 2
+    oak_longitudinal_0.01;   !- Layer 3
+
+  Construction,
+    BPS-OuterDoor_3_0.01_0.06_0.01,  !- Name
+    oak_longitudinal_0.01,   !- Outside Layer
+    wood_wool_board_magnesia_460_0.06,  !- Layer 2
+    oak_longitudinal_0.01;   !- Layer 3
+
+  Construction,
+    BPS-Roof_3_0.02_0.12_0.02,  !- Name
+    solid_brick_extruded_0.02,  !- Outside Layer
+    glass_fibre_batt_40_0.12,!- Layer 2
+    vapourpermeable_wood_fibreboard_0.02;  !- Layer 3
+

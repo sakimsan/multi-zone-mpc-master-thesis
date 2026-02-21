@@ -1,0 +1,4 @@
+#1
+double Abwesenheitswoche_NormalerWinter_changeonly_K(1, 11)
+#time_in_s	livingroom	hobby	corridor	wcstorage	kitchen	bedroom	children	corridor2	bath	children2
+0.0	289.65	289.65	289.65	289.65	289.65	289.65	289.65	289.65	289.65	289.65

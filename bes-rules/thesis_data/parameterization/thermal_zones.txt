@@ -1,0 +1,1416 @@
+Living-Room: TKJwNLssk0WyOEqTNi9V3g
+
+  BuildingSurface:Detailed,
+    3uo3t74qXBy9WMPYe7ua5D,  !- Name
+    Floor,                   !- Surface Type
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Ground,                  !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,11.085,0,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.2,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.2,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,11.085,0;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    1y_uwYpEbFN8k9Jmu1h8TT,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3Gyc7Ls2vCYRvo$_bSipxD,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.2,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,11.085,2.6,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,11.085,2.6,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.2,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    2qKixY2FXFuBAPWAJa27GV,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,11.085,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,11.085,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.2,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.2,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    2$Btk$6rD0mevm7Klm2knY,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1fT0syOff8puStpx2ChjAF,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.2,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.2,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,7.64,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,7.64,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    3Rudn5yrPFzRVPhNHtX4je,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2G4SCG2Pb6Suz$3LlnyPvU,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,5.2,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,5.2,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,5.2,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,5.2,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    2ZxDery31FGfH8cX9KzOlg,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,11.085,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,11.085,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,11.085,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,11.085,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    32so0TBWb9TwFiUTZSLUy3,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0PPTFjDYDAxhLckZzSfnZ8,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,7.785,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,7.785,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,11.085,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,11.085,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    3LTwVcRbb5_8eQVYkoiN6e,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    TKJwNLssk0WyOEqTNi9V3g,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,7.64,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,7.64,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,7.785,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,7.785,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+Kitchen: ewAwLYZUK0GDV9RQVVrdsw
+
+  BuildingSurface:Detailed,
+    1$vWpw4415hQY_6dYKaCo3,  !- Name
+    Floor,                   !- Surface Type
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Ground,                  !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.055,0,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.055,0;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    0LqB1RUsr5DeLg2ySl7Okr,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3FA9_i1Qf9dfNs8MdbnEgA,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.055,2.6,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.055,2.6,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    1EcsArQhjBYB6InnGD4fq7,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2Qn8jmLA9F2gLRScv2IoC1,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,3.58,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,3.58,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    2G4SCG2Pb6Suz$3LlnyPvU,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3Rudn5yrPFzRVPhNHtX4je,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.055,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.055,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.055,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.055,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    1E5jm9pwTDcAD1_xSuRiAq,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,5.055,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,5.055,0,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    3p6tvhiwvBQe4$EI3VGjvY,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    1rBRMm9aH5jPSWLHTY2lPz,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2vzM61dV5DcPXBySmc_f8u,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,3.725,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,3.725,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,5.055,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,5.055,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+      BuildingSurface:Detailed,
+    0OKmwFPoT88Am99V$Ot$ze,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    ewAwLYZUK0GDV9RQVVrdsw,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,3.58,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,3.58,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,3.725,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,3.725,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+    Hobby: Jo5bB3uKtUesyY40h7buXA
+
+  BuildingSurface:Detailed,
+    2PqXZpa2nBQxWxZb$WGjYs,  !- Name
+    Floor,                   !- Surface Type
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Ground,                  !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,11.085,0,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.785,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.785,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,11.085,0;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1UjGuYddP8s8VffDb_tuw$,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    24oZ1lp11CkB0vWm31Xi6Y,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.785,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,11.085,2.6,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,11.085,2.6,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.785,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    18iVrJVIHFLhccRBCuzoKx,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,11.085,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,11.085,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,11.085,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,11.085,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2y0c27v_L7kf1PGWcQt_gQ,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2BfBOb0fDALBPtINh6O8aw,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,7.785,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,7.785,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,7.785,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,7.785,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0PPTFjDYDAxhLckZzSfnZ8,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    32so0TBWb9TwFiUTZSLUy3,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,11.085,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,11.085,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.785,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.785,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3UQ8DoRDXE4u3mBgXyKGL2,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    Jo5bB3uKtUesyY40h7buXA,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.785,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.785,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,11.085,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,11.085,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+    Corridor: VxcvwqdxJ0CrsbXjgBdn2A
+
+    BuildingSurface:Detailed,
+    0TzI7RGvL0t9lfmxS9ijOr,  !- Name
+    Floor,                   !- Surface Type
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Ground,                  !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.64,0,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.725,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.725,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.64,0;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0zTZeBpz1CfwRoAFgtxCDl,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1Y_7pbzVb0wfu8JFhPQOJG,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.725,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.64,2.6,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.64,2.6,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.725,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2BfBOb0fDALBPtINh6O8aw,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2y0c27v_L7kf1PGWcQt_gQ,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.64,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.64,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.64,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.64,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1kffuyfyT0cRpp3UO09LYE,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.725,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.725,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,7.64,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,7.64,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3sfvZd2pj7Twi$9yZDBXvi,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3aJ33XtHX9ffO5LCPh3sX4,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,3.725,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,3.725,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,3.725,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,3.725,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2vzM61dV5DcPXBySmc_f8u,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1rBRMm9aH5jPSWLHTY2lPz,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,5.055,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,5.055,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.725,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.725,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1fT0syOff8puStpx2ChjAF,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2$Btk$6rD0mevm7Klm2knY,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,7.64,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,7.64,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,5.2,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,5.2,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1DQaQCTnX1fOyZ05iECd_w,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    VxcvwqdxJ0CrsbXjgBdn2A,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,5.2,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,5.2,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,5.055,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,5.055,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+    WC Storage: 8VvlyRmVH0C1HUd3CNvpWg
+
+     BuildingSurface:Detailed,
+    36sqYuGcn0ux0DSg3GINwE,  !- Name
+    Floor,                   !- Surface Type
+    BPS-GroundFloor_5_0.03_0.08_0.04_0.04_0.16,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Ground,                  !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.58,0,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.58,0;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0WVBIR9ef3DxeehDEWYowe,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0r66SF9ML7TBufkSEIcCc0,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.58,2.6,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.58,2.6,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3Pd10x$H1DD8DlRrqzeTXp,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,3.58,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,3.58,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3aJ33XtHX9ffO5LCPh3sX4,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3sfvZd2pj7Twi$9yZDBXvi,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.58,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.58,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.58,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.58,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2Qn8jmLA9F2gLRScv2IoC1,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1EcsArQhjBYB6InnGD4fq7,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,3.58,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,3.58,0,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2ze26MqU564uLrWziqfSTf,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    8VvlyRmVH0C1HUd3CNvpWg,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,0.28,2.6,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,0.28,0,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,0.28,0,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,0.28,2.6;  !- X,Y,Z ==> Vertex 4 {m}
+
+
+    Ceiling: IfKJfrdT40ehbMFAOP2OHQ
+
+      BuildingSurface:Detailed,
+    2ManKvuD95MOLQkaPDAosb,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.252,0.28,9.935,  !- X,Y,Z ==> Vertex 1 {m}
+    0,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    8.605,0.28,5.683,  !- X,Y,Z ==> Vertex 3 {m}
+    4.353,0.28,9.935;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3PiRCvTMDFKfmVWphhRYzZ,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.353,11.085,9.935,  !- X,Y,Z ==> Vertex 1 {m}
+    8.605,11.085,5.683,  !- X,Y,Z ==> Vertex 2 {m}
+    0,11.085,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.252,11.085,9.935;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1Vxn_8iwH0KROQWIXnsdbx,  !- Name
+    Roof,                    !- Surface Type
+    BPS-Roof_3_0.02_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.353,0.28,9.935,  !- X,Y,Z ==> Vertex 1 {m}
+    4.353,11.085,9.935,  !- X,Y,Z ==> Vertex 2 {m}
+    4.252,11.085,9.935,  !- X,Y,Z ==> Vertex 3 {m}
+    4.252,0.28,9.935;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2dTAU1f75AUwljRxNpWKse,  !- Name
+    Roof,                    !- Surface Type
+    BPS-Roof_3_0.02_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.252,11.085,9.935,  !- X,Y,Z ==> Vertex 1 {m}
+    0,11.085,5.683,  !- X,Y,Z ==> Vertex 2 {m}
+    0,0.28,5.683,  !- X,Y,Z ==> Vertex 3 {m}
+    4.252,0.28,9.935;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3GAUyX46nEqfQx0lL$sT2l,  !- Name
+    Roof,                    !- Surface Type
+    BPS-Roof_3_0.02_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.353,0.28,9.935,  !- X,Y,Z ==> Vertex 1 {m}
+    8.605,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    8.605,11.085,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.353,11.085,9.935;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3dHBvghDj65xNkPfCpxtiK,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    tHsTmDYVR0miJ70tXUrGOw,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.055,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,0.28,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.055,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0zzl03JXfF_hp0sOBcrz6E,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    YqyY556OyEOZmC50RCSVpQ,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.58,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,0.28,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.58,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0yLQ_yRAf6vwNzc$5F_Id$,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    jaa06PHWwEKY8GAJZY7zGg,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.64,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.725,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.725,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.64,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1zkFM_$IX39hxLe5vLkKFd,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    U1xgFVZ7qU2jHrfvJ9EyTg,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,11.085,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.2,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.2,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,11.085,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3wxUKM0NL93eLMxuu6E3OC,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    Emw3Vznb1keGM7vzzIWqKw,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,11.085,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.785,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.785,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,11.085,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    280bD0FVz93RgxALqMVaEL,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,11.085,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    0,0.28,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    0,11.085,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    222hqEtzb8hgdXOrxBx8IT,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.605,11.085,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.605,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,0.28,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,11.085,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1EYhSEyzz4chFEdpKXHLa4,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,11.085,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,0.28,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,0.28,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,11.085,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3txUkrBRT19QEmdo2GGo_q,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.2,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.055,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.055,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.2,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1b9ZlewTH4HwwYbf3wmNvg,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.725,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.58,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.58,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.725,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1qUZX$AyHBTwc0UH17hCc5,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    IfKJfrdT40ehbMFAOP2OHQ,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.785,5.682,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.64,5.682,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.64,5.682,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.785,5.682;  !- X,Y,Z ==> Vertex 4 {m}
+
+Bedroom: JIlBdoXH9kyILsDvu4wx8A
+
+  BuildingSurface:Detailed,
+    3Gyc7Ls2vCYRvo$_bSipxD,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1y_uwYpEbFN8k9Jmu1h8TT,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,11.085,2.875,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.2,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.2,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,11.085,2.875;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    234LqWHfP08hs9FIRU2_sa,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,11.085,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,11.085,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,11.085,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,11.085,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0yqWqfaG92hhk8yvCfVR$Q,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0xqCfxBX92Sfci$syPa18c,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,5.2,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,5.2,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,5.2,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,5.2,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    U1xgFVZ7qU2jHrfvJ9EyTg,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1zkFM_$IX39hxLe5vLkKFd,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.2,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,11.085,5.475,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,11.085,5.475,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.2,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    13yBvK24H4cOvD9vMsh$5i,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2lt$6JiRj8sOoQyYpciN60,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,7.785,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,7.785,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,11.085,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,11.085,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3m0Ii62gfAnBSz2eMqABoY,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1sxF8LSeX8vfU7EV$mpBaV,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.2,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.2,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,7.64,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,7.64,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    37L4eZsf1FQ9nr2M7ezqkQ,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,7.64,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,7.64,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,7.785,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,7.785,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1r2efRVUXEDhgsMYi31MIb,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    JIlBdoXH9kyILsDvu4wx8A,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,11.085,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,11.085,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.2,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.2,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+    Children: uFb0fbIbnUCa0AXLT56UfA
+
+      BuildingSurface:Detailed,
+    3FA9_i1Qf9dfNs8MdbnEgA,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0LqB1RUsr5DeLg2ySl7Okr,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.055,2.875,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,0.28,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,0.28,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.055,2.875;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    23cUKRxGH6ieayWkfRSJbO,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,0.28,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,0.28,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,0.28,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,0.28,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0xqCfxBX92Sfci$syPa18c,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0yqWqfaG92hhk8yvCfVR$Q,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,5.055,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.055,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.055,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,5.055,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    tHsTmDYVR0miJ70tXUrGOw,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3dHBvghDj65xNkPfCpxtiK,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,0.28,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,5.055,5.475,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,5.055,5.475,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,0.28,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1O7UYlrLD7i8OD7yY0r19v,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    2W4aa10bj1VvxY3AXX9_Lc,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,0.28,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,0.28,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,3.58,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,3.58,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    35vb7iscr60BT_AQZhlENO,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0XAGB7vXr8ROcN7Nk6DsFY,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,3.725,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,3.725,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,5.055,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,5.055,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    21LJ5PAYbCle2KNLSiBVra,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.2,3.58,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.2,3.58,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.2,3.725,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.2,3.725,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0oI_MGbB5FbQwdic0zCroI,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    uFb0fbIbnUCa0AXLT56UfA,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    0.28,5.055,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    0.28,5.055,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    0.28,0.28,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    0.28,0.28,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+    children small: BGVPLnC4OUeqffvCvT6TTQ
+
+      BuildingSurface:Detailed,
+    24oZ1lp11CkB0vWm31Xi6Y,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1UjGuYddP8s8VffDb_tuw$,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,11.085,2.875,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.785,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.785,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,11.085,2.875;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    32RNQZOr55ixX7FqTuOSFU,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,11.085,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,11.085,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,11.085,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,11.085,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3MgVh8WEf6Ug_1Tz617dV1,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    1SmJIV5_nEtB8jTD9MNC0p,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,7.785,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,7.785,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,7.785,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,7.785,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2lt$6JiRj8sOoQyYpciN60,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    13yBvK24H4cOvD9vMsh$5i,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,11.085,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,11.085,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.785,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.785,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    Emw3Vznb1keGM7vzzIWqKw,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3wxUKM0NL93eLMxuu6E3OC,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.785,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,11.085,5.475,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,11.085,5.475,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.785,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    36KHFp6fr359oP_h$vhm3z,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    BGVPLnC4OUeqffvCvT6TTQ,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.785,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.785,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,11.085,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,11.085,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+    Corridor upper floor: amiO3KhG402UMEU7Fs9xaA
+
+     BuildingSurface:Detailed,
+    1Y_7pbzVb0wfu8JFhPQOJG,  !- Name
+    Floor,                   !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0zTZeBpz1CfwRoAFgtxCDl,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.64,2.875,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.725,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.725,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.64,2.875;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1SmJIV5_nEtB8jTD9MNC0p,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3MgVh8WEf6Ug_1Tz617dV1,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,7.64,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.64,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.64,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,7.64,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0fCjgOHnz1GQDz0NzN_Ugo,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    16Mt9vyuX6JAP$WQMiyH9W,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,3.725,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,3.725,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,3.725,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,3.725,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    jaa06PHWwEKY8GAJZY7zGg,  !- Name
+    Ceiling,                 !- Surface Type
+    BPS-InnerFloor_3_0.04_0.03_0.15,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    0yLQ_yRAf6vwNzc$5F_Id$,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.725,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,7.64,5.475,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,7.64,5.475,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.725,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    0XAGB7vXr8ROcN7Nk6DsFY,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    35vb7iscr60BT_AQZhlENO,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,5.055,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,5.055,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,3.725,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,3.725,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    1sxF8LSeX8vfU7EV$mpBaV,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Surface,                 !- Outside Boundary Condition
+    3m0Ii62gfAnBSz2eMqABoY,  !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,7.64,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,7.64,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,5.2,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,5.2,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    2OIA5f365ErBOeTyuCOeLT,  !- Name
+    Wall,                    !- Surface Type
+    BPS-InnerWall_3_0.01_0.15_0.01,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Adiabatic,               !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    NoSun,                   !- Sun Exposure
+    NoWind,                  !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    4.405,5.2,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    4.405,5.2,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    4.405,5.055,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    4.405,5.055,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+  BuildingSurface:Detailed,
+    3pcL$8r0L4k8ZzPs5hkyqo,  !- Name
+    Wall,                    !- Surface Type
+    BPS-OuterWall_3_0.34_0.12_0.02,  !- Construction Name
+    amiO3KhG402UMEU7Fs9xaA,  !- Zone Name
+    ,                        !- Space Name
+    Outdoors,                !- Outside Boundary Condition
+    ,                        !- Outside Boundary Condition Object
+    SunExposed,              !- Sun Exposure
+    WindExposed,             !- Wind Exposure
+    autocalculate,           !- View Factor to Ground
+    autocalculate,           !- Number of Vertices
+    8.325,3.725,5.475,  !- X,Y,Z ==> Vertex 1 {m}
+    8.325,3.725,2.875,  !- X,Y,Z ==> Vertex 2 {m}
+    8.325,7.64,2.875,  !- X,Y,Z ==> Vertex 3 {m}
+    8.325,7.64,5.475;  !- X,Y,Z ==> Vertex 4 {m}
+
+    Bath: E4XJpmy03kW3qfdfjVrPLA

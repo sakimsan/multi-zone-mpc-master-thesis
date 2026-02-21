@@ -1,0 +1,170 @@
+{
+  "module_id": "mpc",
+  "type": "agentlib_mpc.mpc",
+  "optimization_backend": {
+    "type": "casadi",
+    "build_batch_bat": "mpc_utils/solver_lib/compile_nlp.bat",
+    "do_jit": false,
+    "overwrite_result_file": true,
+    "discretization_options": {
+      "collocation_order": 2,
+      "collocation_method": "legendre"
+    },
+    "solver": {
+      "name": "ipopt",
+      "options": {
+        "ipopt": {
+          "max_iter": 10000,
+          "max_cpu_time": 120,
+          "tol": 0.0001,
+          "acceptable_iter": 20,
+          "acceptable_tol": 0.001
+        }
+      }
+    }
+  },
+  "parameters": [
+    {
+      "name": "T_Air_ub",
+      "value": 296.06
+    },
+    {
+      "name": "T_Air_lb",
+      "value": 293.06
+    },
+    {
+      "name": "c_comf_upper",
+      "value": 10000
+    },
+    {
+      "name": "c_comf_lower",
+      "value": 100
+    }
+  ],
+  "controls": [
+    {
+      "name": "TBufSet",
+      "value": 323.15,
+      "lb": 293.15,
+      "ub": 343.15
+    },
+    {
+      "name": "TSetOneZone",
+      "value": 293.15,
+      "lb": 292.06,
+      "ub": 296.06
+    },
+    {
+      "name": "yEleHeaSet",
+      "value": 0.0,
+      "lb": 0,
+      "ub": 1
+    },
+    {
+      "name": "yValSet",
+      "value": 0.0,
+      "lb": 0,
+      "ub": 1
+    }
+  ],
+  "states": [
+    {
+      "name": "T_TES_1",
+      "value": 293.15
+    },
+    {
+      "name": "T_TES_2",
+      "value": 293.15
+    },
+    {
+      "name": "T_TES_3",
+      "value": 293.15
+    },
+    {
+      "name": "T_TES_4",
+      "value": 293.15
+    },
+    {
+      "name": "T_Air",
+      "value": 293.15
+    },
+    {
+      "name": "T_Roof",
+      "value": 293.15
+    },
+    {
+      "name": "T_Floor",
+      "value": 293.15
+    },
+    {
+      "name": "T_ExtWall",
+      "value": 293.15
+    },
+    {
+      "name": "T_IntWall",
+      "value": 293.15
+    }
+  ],
+  "inputs": [
+    {
+      "name": "Q_RadSol",
+      "value": 0.0,
+      "alias": "Q_RadSol_prediction"
+    },
+    {
+      "name": "T_amb",
+      "value": 283.15,
+      "alias": "T_amb_prediction"
+    },
+    {
+      "name": "THeaCur",
+      "value": 293.15,
+      "alias": "THeaCur_prediction"
+    },
+        {
+      "name": "T_preTemWin",
+      "value": 293.15,
+      "alias": "T_preTemWin_prediction"
+    },
+    {
+      "name": "T_preTemWall",
+      "value": 293.15,
+      "alias": "T_preTemWall_prediction"
+    },
+    {
+      "name": "T_preTemRoof",
+      "value": 293.15,
+      "alias": "T_preTemRoof_prediction"
+    },
+    {
+      "name": "T_preTemFloor",
+      "value": 286.15,
+      "alias": "T_preTemFloor_prediction"
+    },
+    {
+      "name": "schedule_human",
+      "value": 0.0,
+      "alias": "schedule_human_prediction"
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0.0,
+      "alias": "schedule_dev_prediction"
+    },
+    {
+      "name": "schedule_light",
+      "value": 0.0,
+      "alias": "schedule_light_prediction"
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0.0,
+      "alias": "P_el_pv_prediction"
+    },
+    {
+      "name": "SGReadySignal",
+      "value": 2,
+      "alias": "SGReadySignal_prediction"
+    }
+  ]
+}

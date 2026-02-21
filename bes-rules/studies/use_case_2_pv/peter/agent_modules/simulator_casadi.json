@@ -1,0 +1,123 @@
+{
+  "module_id": "mySim",
+  "type": "simulator",
+  "model": {
+    "states": [
+      {
+        "name": "T_Air",
+        "value": 293.15
+      },
+      {
+        "name": "T_IntWall",
+        "value": 293.15
+      },
+      {
+        "name": "T_ExtWall",
+        "value": 293.15
+      },
+      {
+        "name": "T_Roof",
+        "value": 293.15
+      },
+      {
+        "name": "T_Floor",
+        "value": 293.15
+      }
+    ]
+  },
+  "t_sample": 5,
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "output",
+    "local",
+    "input"
+  ],
+  "inputs": [
+    {
+      "name": "valve",
+      "value": 1
+    },
+    {
+      "name": "T_forward",
+      "value": 325
+    },
+    {
+      "name": "Q_RadSol",
+      "value": 0,
+      "alias": "Q_RadSol_measurement"
+    },
+    {
+      "name": "T_amb",
+      "value": 293.15,
+      "alias": "T_amb_measurement"
+    },
+    {
+      "name": "T_preTemWin",
+      "value": 293.15,
+      "alias": "T_preTemWin_measurement"
+    },
+    {
+      "name": "T_preTemWall",
+      "value": 293.15,
+      "alias": "T_preTemWall_measurement"
+    },
+    {
+      "name": "T_preTemRoof",
+      "value": 293.15,
+      "alias": "T_preTemRoof_measurement"
+    },
+    {
+      "name": "T_preTemFloor",
+      "value": 293.15,
+      "alias": "T_preTemFloor_measurement"
+    },
+    {
+      "name": "schedule_human",
+      "value": 0,
+      "alias": "schedule_human_measurement"
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0,
+      "alias": "schedule_dev_measurement"
+    },
+    {
+      "name": "schedule_light",
+      "value": 0,
+      "alias": "schedule_light_measurement"
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0,
+      "alias": "P_el_pv_measurement"
+    }
+  ],
+  "states": [
+    {
+      "name": "T_Air",
+      "value": 293.15
+    },
+    {
+      "name": "T_IntWall",
+      "value": 293.15
+    },
+    {
+      "name": "T_ExtWall",
+      "value": 293.15
+    },
+    {
+      "name": "T_Roof",
+      "value": 293.15
+    },
+    {
+      "name": "T_Floor",
+      "value": 293.15
+    }
+  ],
+  "outputs": [],
+  "shared_variable_fields": [
+    "states"
+  ]
+}

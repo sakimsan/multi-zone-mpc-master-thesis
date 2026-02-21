@@ -1,0 +1,5 @@
+PartialTest
+TestIdealValveRadiatorSystem
+TestPressureBasedSystem
+TestPressureBasedSystemWithReliefValve
+TestUnderfloorHeating

@@ -1,0 +1,4 @@
+within BESGriConOp.Studies.SFH.MPCModelROM.BESCISBAT;
+model BESNoDHW_fmu
+  extends BESNoDHW;
+end BESNoDHW_fmu;

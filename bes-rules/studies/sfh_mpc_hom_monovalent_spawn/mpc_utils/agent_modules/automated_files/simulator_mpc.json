@@ -1,0 +1,793 @@
+{
+  "module_id": "sim",
+  "type": "simulator",
+  "model": {
+    "type": "casadi",
+    "only_config_variables": true,
+    "dt": 60
+  },
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "shared_variable_fields": [
+    "outputs",
+    "states"
+  ],
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "input",
+    "output",
+    "local"
+  ],
+  "inputs": [
+    {
+      "name": "TBufSet",
+      "value": 323.15
+    },
+    {
+      "name": "yEleHeaSet",
+      "value": 0
+    },
+    {
+      "name": "yValSet_livingroom",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_kitchen",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_hobby",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_wcstorage",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_corridor",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_bedroom",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_children",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_corridor2",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_bath",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_children2",
+      "value": 0.0
+    },
+    {
+      "name": "yValSet_attic",
+      "value": 0.0
+    },
+    {
+      "name": "T_amb",
+      "value": 283.15,
+      "alias": "T_amb_measurement"
+    },
+    {
+      "name": "THeaCur",
+      "value": 293.15,
+      "alias": "THeaCur_measurement"
+    },
+    {
+      "name": "schedule_human",
+      "value": 0.0,
+      "alias": "schedule_human_measurement"
+    },
+    {
+      "name": "schedule_dev",
+      "value": 0.0,
+      "alias": "schedule_dev_measurement"
+    },
+    {
+      "name": "schedule_light",
+      "value": 0.0,
+      "alias": "schedule_light_measurement"
+    },
+    {
+      "name": "P_el_pv",
+      "value": 0.0,
+      "alias": "P_el_pv_measurement"
+    },
+    {
+      "name": "T_preTemFloor_GroundFloor_livingroom",
+      "value": 286.15,
+      "alias": "T_preTemFloor_GroundFloor_livingroom_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_livingroom",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_livingroom_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_livingroom",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_livingroom_measurement"
+    },
+    {
+      "name": "T_preTemFloor_GroundFloor_kitchen",
+      "value": 286.15,
+      "alias": "T_preTemFloor_GroundFloor_kitchen_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_kitchen",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_kitchen_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_kitchen",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_kitchen_measurement"
+    },
+    {
+      "name": "T_preTemFloor_GroundFloor_hobby",
+      "value": 286.15,
+      "alias": "T_preTemFloor_GroundFloor_hobby_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_hobby",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_hobby_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_hobby",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_hobby_measurement"
+    },
+    {
+      "name": "T_preTemFloor_GroundFloor_wcstorage",
+      "value": 286.15,
+      "alias": "T_preTemFloor_GroundFloor_wcstorage_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_wcstorage",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_wcstorage_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_wcstorage",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_wcstorage_measurement"
+    },
+    {
+      "name": "T_preTemFloor_GroundFloor_corridor",
+      "value": 286.15,
+      "alias": "T_preTemFloor_GroundFloor_corridor_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_corridor",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_corridor_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_bedroom",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_bedroom_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_bedroom",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_bedroom_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_children",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_children_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_children",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_children_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_corridor2",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_corridor2_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_bath",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_bath_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_bath",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_bath_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_children2",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_children2_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_children2",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_children2_measurement"
+    },
+    {
+      "name": "T_preTemRoof_Dach_attic",
+      "value": 294.15,
+      "alias": "T_preTemRoof_Dach_attic_measurement"
+    },
+    {
+      "name": "T_preTemRoof_Dach2_attic",
+      "value": 294.15,
+      "alias": "T_preTemRoof_Dach2_attic_measurement"
+    },
+    {
+      "name": "T_preTemRoof_Dach3_attic",
+      "value": 294.15,
+      "alias": "T_preTemRoof_Dach3_attic_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall_attic",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall_attic_measurement"
+    },
+    {
+      "name": "T_preTemWall_OuterWall2_attic",
+      "value": 294.15,
+      "alias": "T_preTemWall_OuterWall2_attic_measurement"
+    },
+    {
+      "name": "Q_RadSol_livingroom",
+      "value": 0.0,
+      "alias": "Q_RadSol_livingroom_measurement"
+    },
+    {
+      "name": "Q_RadSol_kitchen",
+      "value": 0.0,
+      "alias": "Q_RadSol_kitchen_measurement"
+    },
+    {
+      "name": "Q_RadSol_hobby",
+      "value": 0.0,
+      "alias": "Q_RadSol_hobby_measurement"
+    },
+    {
+      "name": "Q_RadSol_wcstorage",
+      "value": 0.0,
+      "alias": "Q_RadSol_wcstorage_measurement"
+    },
+    {
+      "name": "Q_RadSol_corridor",
+      "value": 0.0,
+      "alias": "Q_RadSol_corridor_measurement"
+    },
+    {
+      "name": "Q_RadSol_bedroom",
+      "value": 0.0,
+      "alias": "Q_RadSol_bedroom_measurement"
+    },
+    {
+      "name": "Q_RadSol_children",
+      "value": 0.0,
+      "alias": "Q_RadSol_children_measurement"
+    },
+    {
+      "name": "Q_RadSol_corridor2",
+      "value": 0.0,
+      "alias": "Q_RadSol_corridor2_measurement"
+    },
+    {
+      "name": "Q_RadSol_bath",
+      "value": 0.0,
+      "alias": "Q_RadSol_bath_measurement"
+    },
+    {
+      "name": "Q_RadSol_children2",
+      "value": 0.0,
+      "alias": "Q_RadSol_children2_measurement"
+    },
+    {
+      "name": "Q_RadSol_attic",
+      "value": 0.0,
+      "alias": "Q_RadSol_attic_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_livingroom",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_livingroom_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_kitchen",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_kitchen_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_hobby",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_hobby_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_wcstorage",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_wcstorage_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_corridor",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_corridor_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_bedroom",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_bedroom_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_children",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_children_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_corridor2",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_corridor2_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_bath",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_bath_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_children2",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_children2_measurement"
+    },
+    {
+      "name": "ZoneWindowsTotalHeatRate_attic",
+      "value": 0.0,
+      "alias": "ZoneWindowsTotalHeatRate_attic_measurement"
+    },
+    {
+      "name": "TSetOneZone_livingroom",
+      "value": 0.0,
+      "alias": "TSetOneZone_livingroom_measurement"
+    },
+    {
+      "name": "TSetOneZone_kitchen",
+      "value": 0.0,
+      "alias": "TSetOneZone_kitchen_measurement"
+    },
+    {
+      "name": "TSetOneZone_hobby",
+      "value": 0.0,
+      "alias": "TSetOneZone_hobby_measurement"
+    },
+    {
+      "name": "TSetOneZone_wcstorage",
+      "value": 0.0,
+      "alias": "TSetOneZone_wcstorage_measurement"
+    },
+    {
+      "name": "TSetOneZone_corridor",
+      "value": 0.0,
+      "alias": "TSetOneZone_corridor_measurement"
+    },
+    {
+      "name": "TSetOneZone_bedroom",
+      "value": 0.0,
+      "alias": "TSetOneZone_bedroom_measurement"
+    },
+    {
+      "name": "TSetOneZone_children",
+      "value": 0.0,
+      "alias": "TSetOneZone_children_measurement"
+    },
+    {
+      "name": "TSetOneZone_corridor2",
+      "value": 0.0,
+      "alias": "TSetOneZone_corridor2_measurement"
+    },
+    {
+      "name": "TSetOneZone_bath",
+      "value": 0.0,
+      "alias": "TSetOneZone_bath_measurement"
+    },
+    {
+      "name": "TSetOneZone_children2",
+      "value": 0.0,
+      "alias": "TSetOneZone_children2_measurement"
+    },
+    {
+      "name": "TSetOneZone_attic",
+      "value": 0.0,
+      "alias": "TSetOneZone_attic_measurement"
+    },
+    {
+      "name": "SGReadySignal",
+      "value": 2,
+      "alias": "SGReadySignal_measurement"
+    }
+  ],
+  "outputs": [],
+  "states": [
+    {
+      "name": "T_TES_1"
+    },
+    {
+      "name": "T_TES_2"
+    },
+    {
+      "name": "T_TES_3"
+    },
+    {
+      "name": "T_TES_4"
+    },
+    {
+      "name": "T_Air_livingroom"
+    },
+    {
+      "name": "T_Floor_GroundFloor_1_livingroom"
+    },
+    {
+      "name": "T_Floor_GroundFloor_2_livingroom"
+    },
+    {
+      "name": "T_Floor_Decke_livingroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall_livingroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_livingroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_livingroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_livingroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_livingroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_livingroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_livingroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_livingroom"
+    },
+    {
+      "name": "T_Air_kitchen"
+    },
+    {
+      "name": "T_Floor_GroundFloor_1_kitchen"
+    },
+    {
+      "name": "T_Floor_GroundFloor_2_kitchen"
+    },
+    {
+      "name": "T_Floor_Decke_kitchen"
+    },
+    {
+      "name": "T_IntWall_InnerWall_kitchen"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_kitchen"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_kitchen"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_kitchen"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_kitchen"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_kitchen"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_kitchen"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_kitchen"
+    },
+    {
+      "name": "T_Air_hobby"
+    },
+    {
+      "name": "T_Floor_GroundFloor_1_hobby"
+    },
+    {
+      "name": "T_Floor_GroundFloor_2_hobby"
+    },
+    {
+      "name": "T_Floor_Decke_hobby"
+    },
+    {
+      "name": "T_IntWall_InnerWall_hobby"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_hobby"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_hobby"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_hobby"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_hobby"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_hobby"
+    },
+    {
+      "name": "T_Air_wcstorage"
+    },
+    {
+      "name": "T_Floor_GroundFloor_1_wcstorage"
+    },
+    {
+      "name": "T_Floor_GroundFloor_2_wcstorage"
+    },
+    {
+      "name": "T_Floor_Decke_wcstorage"
+    },
+    {
+      "name": "T_IntWall_InnerWall_wcstorage"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_wcstorage"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_wcstorage"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_wcstorage"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_wcstorage"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_wcstorage"
+    },
+    {
+      "name": "T_Air_corridor"
+    },
+    {
+      "name": "T_Floor_GroundFloor_1_corridor"
+    },
+    {
+      "name": "T_Floor_GroundFloor_2_corridor"
+    },
+    {
+      "name": "T_Floor_Decke_corridor"
+    },
+    {
+      "name": "T_IntWall_InnerWall_corridor"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_corridor"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_corridor"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_corridor"
+    },
+    {
+      "name": "T_IntWall_InnerWall5_corridor"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_corridor"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_corridor"
+    },
+    {
+      "name": "T_Air_bedroom"
+    },
+    {
+      "name": "T_Floor_InnerFloor_bedroom"
+    },
+    {
+      "name": "T_Floor_Decke_bedroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall_bedroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_bedroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_bedroom"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_bedroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_bedroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_bedroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_bedroom"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_bedroom"
+    },
+    {
+      "name": "T_Air_children"
+    },
+    {
+      "name": "T_Floor_InnerFloor_children"
+    },
+    {
+      "name": "T_Floor_Decke_children"
+    },
+    {
+      "name": "T_IntWall_InnerWall_children"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_children"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_children"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_children"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_children"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_children"
+    },
+    {
+      "name": "T_Air_corridor2"
+    },
+    {
+      "name": "T_Floor_InnerFloor_corridor2"
+    },
+    {
+      "name": "T_Floor_Decke_corridor2"
+    },
+    {
+      "name": "T_IntWall_InnerWall_corridor2"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_corridor2"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_corridor2"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_corridor2"
+    },
+    {
+      "name": "T_IntWall_InnerWall5_corridor2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_corridor2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_corridor2"
+    },
+    {
+      "name": "T_Air_bath"
+    },
+    {
+      "name": "T_Floor_InnerFloor_bath"
+    },
+    {
+      "name": "T_Floor_Decke_bath"
+    },
+    {
+      "name": "T_IntWall_InnerWall_bath"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_bath"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_bath"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_bath"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_bath"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_bath"
+    },
+    {
+      "name": "T_Air_children2"
+    },
+    {
+      "name": "T_Floor_InnerFloor_children2"
+    },
+    {
+      "name": "T_Floor_Decke_children2"
+    },
+    {
+      "name": "T_IntWall_InnerWall_children2"
+    },
+    {
+      "name": "T_IntWall_InnerWall2_children2"
+    },
+    {
+      "name": "T_IntWall_InnerWall3_children2"
+    },
+    {
+      "name": "T_IntWall_InnerWall4_children2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_children2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_children2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_children2"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_children2"
+    },
+    {
+      "name": "T_Air_attic"
+    },
+    {
+      "name": "T_Roof_Dach_1_attic"
+    },
+    {
+      "name": "T_Roof_Dach_2_attic"
+    },
+    {
+      "name": "T_Roof_Dach2_1_attic"
+    },
+    {
+      "name": "T_Roof_Dach2_2_attic"
+    },
+    {
+      "name": "T_Roof_Dach3_1_attic"
+    },
+    {
+      "name": "T_Roof_Dach3_2_attic"
+    },
+    {
+      "name": "T_Floor_InnerFloor_attic"
+    },
+    {
+      "name": "T_Floor_InnerFloor2_attic"
+    },
+    {
+      "name": "T_Floor_InnerFloor3_attic"
+    },
+    {
+      "name": "T_Floor_InnerFloor4_attic"
+    },
+    {
+      "name": "T_Floor_InnerFloor5_attic"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_1_attic"
+    },
+    {
+      "name": "T_ExtWall_OuterWall_2_attic"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_1_attic"
+    },
+    {
+      "name": "T_ExtWall_OuterWall2_2_attic"
+    }
+  ]
+}

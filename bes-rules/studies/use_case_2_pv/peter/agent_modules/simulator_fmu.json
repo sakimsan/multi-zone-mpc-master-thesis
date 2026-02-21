@@ -1,0 +1,322 @@
+{
+  "module_id": "sim",
+  "type": "simulator",
+  "model": {
+    "type": "fmu",
+    "only_config_variables": true
+  },
+  "update_inputs_on_callback": true,
+  "save_results": true,
+  "shared_variable_fields": [
+    "outputs",
+    "states"
+  ],
+  "overwrite_result_file": true,
+  "result_causalities": [
+    "input",
+    "output",
+    "local"
+  ],
+  "inputs": [
+    {
+      "name": "TBufSet",
+      "value": 323.15
+    },
+    {
+      "name": "yValSet",
+      "value": 0
+    },
+    {
+      "name": "yEleHeaSet",
+      "value": 0
+    }
+  ],
+  "outputs": [
+    {
+      "name": "outputs.electrical.dis.PEleLoa.value",
+      "alias": "P_el_feed_from_grid"
+    },
+    {
+      "name": "outputs.electrical.dis.PEleLoa.integral",
+      "alias": "W_el_feed_from_grid"
+    },
+    {
+      "name": "outputs.electrical.dis.PEleGen.value",
+      "alias": "P_el_feed_into_grid"
+    },
+    {
+      "name": "outputs.electrical.dis.PEleGen.integral",
+      "alias": "W_el_feed_into_grid"
+    },
+    {
+      "name": "outputs.hydraulic.gen.QHeaPum_flow.value",
+      "alias": "Qdot_hp"
+    },
+    {
+      "name": "outputs.hydraulic.gen.QHeaPum_flow.integral",
+      "alias": "Q_hp"
+    },
+    {
+      "name": "outputs.hydraulic.gen.PEleHeaPum.value",
+      "alias": "P_el_hp"
+    },
+    {
+      "name": "outputs.hydraulic.gen.PEleHeaPum.integral",
+      "alias": "W_el_hp"
+    },
+    {
+      "name": "outputs.hydraulic.gen.QEleHea_flow.value",
+      "alias": "Qdot_EleHea"
+    },
+    {
+      "name": "outputs.hydraulic.gen.QEleHea_flow.integral",
+      "alias": "Q_EleHea"
+    },
+    {
+      "name": "outputs.hydraulic.gen.PEleEleHea.value",
+      "alias": "P_el_EleHea"
+    },
+    {
+      "name": "outputs.hydraulic.gen.PEleEleHea.integral",
+      "alias": "W_el_EleHea"
+    },
+    {
+      "name": "outputs.electrical.gen.PElePV.value",
+      "alias": "P_pv"
+    },
+    {
+      "name": "outputs.electrical.gen.PElePV.integral",
+      "alias": "W_pv"
+    }
+  ],
+  "states": [
+    {
+      "name": "building.internalElectricalPin.PElecLoa",
+      "alias": "P_el_demand"
+    },
+    {
+      "name": "outputs.weather.TDryBul",
+      "alias": "Tamb"
+    },
+    {
+      "name": "hydraulic.control.buiAndDHWCtr.TSetBuiSup.TSet",
+      "alias": "THeaCur"
+    },
+    {
+      "name": "hydraulic.distribution.stoBuf.layer[1].T",
+      "alias": "TBuf"
+    },
+    {
+      "name": "hydraulic.transfer.outBusTra.TSup[1]",
+      "alias": "TTraSup"
+    },
+    {
+      "name": "hydraulic.transfer.outBusTra.TRet[1]",
+      "alias": "TTraRet"
+    },
+    {
+      "name": "hydraulic.transfer.traControlBus.opening[1]",
+      "alias": "valve_actual"
+    },
+    {
+      "name": "hydraulic.transfer.rad[1].port_b.m_flow",
+      "alias": "mTra_flow"
+    },
+    {
+      "name": "hydraulic.transfer.rad[1].Q_flow",
+      "alias": "QTra_flow"
+    },
+    {
+      "name": "hydraulic.transfer.rad[1].QCon_flow",
+      "alias": "QTraCon_flow"
+    },
+    {
+      "name": "hydraulic.transfer.rad[1].QRad_flow",
+      "alias": "QTraRad_flow"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.volAir.heatPort.T",
+      "alias": "T_Air"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.volAir.heatPort.Q_flow",
+      "alias": "Qdot_Air"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.convIntWall.Q_flow",
+      "alias": "Qdot_Air_int"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.convExtWall.Q_flow",
+      "alias": "Qdot_Air_ext"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.convRoof.Q_flow",
+      "alias": "Qdot_Air_roof"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.convFloor.Q_flow",
+      "alias": "Qdot_Air_floor"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.convWin.Q_flow",
+      "alias": "Qdot_Air_win"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.intWallRC.port_a.T",
+      "alias": "T_IntWall_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.intWallRC.port_a.Q_flow",
+      "alias": "Qdot_IntWall_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.intWallRC.thermCapInt[1].T",
+      "alias": "T_IntWall"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.intWallRC.thermCapInt[1].port.Q_flow",
+      "alias": "Qdot_IntWall"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.port_a.T",
+      "alias": "T_ExtWall_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.port_a.Q_flow",
+      "alias": "Qdot_ExtWall_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.port_b.T",
+      "alias": "T_ExtWall_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.port_b.Q_flow",
+      "alias": "Qdot_ExtWall_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.thermCapExt[1].T",
+      "alias": "T_ExtWall"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.extWallRC.thermCapExt[1].port.Q_flow",
+      "alias": "Qdot_ExtWall"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.port_a.T",
+      "alias": "T_Roof_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.port_a.Q_flow",
+      "alias": "Qdot_Roof_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.port_b.T",
+      "alias": "T_Roof_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.port_b.Q_flow",
+      "alias": "Qdot_Roof_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.thermCapExt[1].T",
+      "alias": "T_Roof"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.roofRC.thermCapExt[1].port.Q_flow",
+      "alias": "Qdot_Roof"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.port_a.T",
+      "alias": "T_Floor_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.port_a.Q_flow",
+      "alias": "Qdot_Floor_sur"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.port_b.T",
+      "alias": "T_Floor_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.port_b.Q_flow",
+      "alias": "Qdot_Floor_pre"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.thermCapExt[1].T",
+      "alias": "T_Floor"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.floorRC.thermCapExt[1].port.Q_flow",
+      "alias": "Qdot_Floor"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.radHeatSol[1].Q_flow",
+      "alias": "Q_RadSol_or_1"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.radHeatSol[2].Q_flow",
+      "alias": "Q_RadSol_or_2"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.radHeatSol[3].Q_flow",
+      "alias": "Q_RadSol_or_3"
+    },
+    {
+      "name": "building.thermalZone[1].ROM.radHeatSol[4].Q_flow",
+      "alias": "Q_RadSol_or_4"
+    },
+    {
+      "name": "building.outBusDem.QIntGain[1].value",
+      "alias": "Q_IntGains"
+    },
+    {
+      "name": "building.thermalZone[1].zoneParam.AZone",
+      "alias": "AZone"
+    },
+    {
+      "name": "building.thermalZone[1].lights.uRel",
+      "alias": "schedule_light"
+    },
+    {
+      "name": "building.thermalZone[1].zoneParam.lightingPowerSpecific",
+      "alias": "lightingPowerSpecific"
+    },
+    {
+      "name": "building.thermalZone[1].machinesSenHea.uRel",
+      "alias": "schedule_dev"
+    },
+    {
+      "name": "building.thermalZone[1].zoneParam.internalGainsMachinesSpecific",
+      "alias": "internalGainsMachinesSpecific"
+    },
+    {
+      "name": "building.thermalZone[1].humanSenHeaDependent.uRel",
+      "alias": "schedule_human"
+    },
+    {
+      "name": "building.thermalZone[1].zoneParam.specificPeople",
+      "alias": "specificPeople"
+    },
+    {
+      "name": "building.thermalZone[1].zoneParam.activityDegree",
+      "alias": "activityDegree"
+    },
+    {
+      "name": "building.thermalZone[1].airExc.Q_flow",
+      "alias": "Qdot_airExc"
+    },
+    {
+      "name": "building.thermalZone[1].airExc.ventRate",
+      "alias": "ventRate_airExc"
+    },
+    {
+      "name": "building.thermalZone[1].ventCont.relOccupation",
+      "alias": "relOccupation"
+    },
+    {
+      "name": "building.thermalZone[1].ventCont.overheatingACH",
+      "alias": "overheatingACH"
+    }
+  ]
+}

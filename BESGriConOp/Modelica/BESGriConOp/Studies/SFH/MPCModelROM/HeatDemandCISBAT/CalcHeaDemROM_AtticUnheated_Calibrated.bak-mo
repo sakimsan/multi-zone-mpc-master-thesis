@@ -1,0 +1,85 @@
+within BESGriConOp.Studies.SFH.MPCModelROM.HeatDemandCISBAT;
+model CalcHeaDemROM_AtticUnheated_Calibrated
+  "Calculate the heat demand for a ROM"
+  extends BESMod.Systems.Demand.Building.HeatDemand.PartialCalcHeatingDemand(
+    redeclare BESMod.Systems.UserProfiles.TEASERProfiles heaDemSce(final gain={
+          0,0,0}),
+    TN_heater=building.zoneParam[1].TNHeat,
+    KR_heater=building.zoneParam[1].KRHeat,
+    h_heater=building.zoneParam.hHeat*10,
+    redeclare
+      BESGriConOp.Studies.SFH.MPCModelROM.HeatDemandBausim.RecordsCollection.BESParameters
+      systemParameters(TOda_nominal=261.15, THydSup_nominal={328.15}),
+    redeclare BESMod.Systems.Demand.Building.TEASERThermalZone building(
+      nZones=1,
+      redeclare
+        BESGriConOp.Studies.SFH.MPCModelROM.HeatDemandCISBAT.RecordsCollection.bim2sim_teaserExport_4elements_CISBAT_atticUnheated_calibratedAnnual
+        oneZoneParam,
+      final ventRate=0.5 .- building.zoneParam.baseACH,
+      use_verboseEnergyBalance=false,
+      energyDynamics=Modelica.Fluid.Types.Dynamics.FixedInitial,
+      TOda_nominal=systemParameters.TOda_nominal),
+    weaDat(
+      pAtmSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      TDryBulSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      TDewPoiSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      TBlaSkySou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      relHumSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      winSpeSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      HInfHorSou=IBPSA.BoundaryConditions.Types.DataSource.File,
+      HSou=IBPSA.BoundaryConditions.Types.RadiationDataSource.File,
+      totSkyCovSou=IBPSA.BoundaryConditions.Types.DataSource.File));
+  extends Modelica.Icons.Example;
+
+  Modelica.Blocks.Interfaces.RealOutput QBuiFroRec_flow_nominal[building.nZones](
+     each final unit="W") "Indoor air temperature" annotation (Placement(
+        transformation(
+        extent={{-10,-10},{10,10}},
+        rotation=0,
+        origin={110,-60}), iconTransformation(
+        extent={{-10,-10},{10,10}},
+        rotation=0,
+        origin={110,-80})));
+
+  Modelica.Blocks.Sources.RealExpression reaExpQFroRec_flow[building.nZones](y=
+        building.QRec_flow_nominal)
+    annotation (Placement(transformation(extent={{58,-70},{80,-48}})));
+  Modelica.Blocks.Continuous.Integrator QDemBuiSum(k=1/3600/1000)
+    "heat demand in kWh"
+    annotation (Placement(transformation(extent={{98,-38},{114,-22}})));
+equation
+  connect(QBuiFroRec_flow_nominal, reaExpQFroRec_flow.y) annotation (Line(
+        points={{110,-60},{108,-60},{108,-59},{81.1,-59}},     color={0,0,127}));
+  connect(reaExpQSum_flow.y,QDemBuiSum. u) annotation (Line(points={{81.1,-31},
+          {81.1,-30},{96.4,-30}},                   color={0,0,127}));
+    annotation (Placement(transformation(extent={{48,-72},{70,-50}})),
+              Documentation(info="<html>
+<p>In order to use this model, choose a number of zones and pass a zoneParam from TEASER for every zone. Further specify the nominal heat outdoor air temperature in the system parameters or pass your custom systemParameters record.</p>
+</html>"),
+    experiment(
+      StopTime=31536000,
+      Interval=3600,
+      __Dymola_Algorithm="Dassl"),
+    __Dymola_experimentSetupOutput(
+      states=false,
+      derivatives=false,
+      inputs=false,
+      auxiliaries=false,
+      events=false),
+    __Dymola_experimentFlags(
+      Advanced(
+        GenerateAnalyticJacobian=false,
+        OutputModelicaCode=false,
+        IncludeFunctionContext=true,
+        SetPrintEvent=false,
+        GenerateBlockTimers=false,
+        GenerateFunctionTimers=false,
+        GenerateVariableDependencies=false,
+        AssertAllInsideMinMax=false,
+        AssertNonLinearInsideMinMax=false,
+        LogMinMaxSimplification=false,
+        UseMinMaxToSimplify=true),
+      Evaluate=false,
+      OutputCPUtime=true,
+      OutputFlatModelica=false));
+end CalcHeaDemROM_AtticUnheated_Calibrated;
